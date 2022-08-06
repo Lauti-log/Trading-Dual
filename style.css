@@ -1,0 +1,545 @@
+#ultimo + div, .disclaimer{
+    visibility:hidden;
+}
+
+.disclaimer{
+    visibility:hidden;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ------------------HEADER-MOV------------ */
+.header-mov{
+    display: none;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Akshar', sans-serif;
+    background-color: rgba(24, 24, 24, 0.9);
+}
+
+.logo-mov img{
+    height: 40px;
+    width: 60px;
+    padding: 2px;
+}
+
+.barra-mov{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.container-lista-mov{
+    width: 100vh;
+    height: 90vh;
+    position: absolute;
+    z-index: 5;
+}
+
+.fa{
+    font-size: 30px !important;
+    color: #fff;
+}
+
+#check{
+    display: none;
+}
+
+.nav-mov{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: rgb(0 0 0 / 83%);
+    height: 92vh;
+    width: 100%;
+    left: -100%;
+    top: 8vh;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1;
+    backdrop-filter: blur(15px);
+}
+
+.nav-mov a{
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#check:checked ~ div.nav-mov{
+    left: 0;
+}
+
+/* ------------------HEADER------------- */
+
+header{
+    position: absolute;
+    width: 100%;
+    font-family: 'Akshar', sans-serif;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    width: 100px;
+}
+
+.container-lista{
+    width: 70vh;
+}
+
+.lista-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-nav{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.lista-nav a:hover{
+    color: #8b1414;
+    font-size: 23px ;
+    padding: 0 5px;
+    font-weight: 700;
+}
+
+.container-inicio{
+    background-image: url(img/fondo3.png);
+    background-position: center center;
+    height: 130vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Akshar', sans-serif;
+}
+
+.principal{
+    color: #fff;
+    margin-left: 50px;
+    
+}
+
+.container-texto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.titulo-inicio{
+    margin: 20px 0;
+    font-size: 45px;
+}
+
+.p-inicio{
+    color: #8b1414;
+    font-weight: 800;
+}
+
+.boton-inicio{
+    background: rgb(93,16,16);
+    background: linear-gradient(45deg, rgba(93,16,16,1) 0%, rgba(182,44,9,1) 73%);
+    color:#fff;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: none;
+    /* transition: all .2s; */
+    text-decoration: none;
+}
+
+@keyframes btn-anim{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-8px);}
+    100%{transform: translateY(0);}
+}
+
+.boton-inicio:hover{
+    /* transform: translateY(-8px); */
+    animation: btn-anim 2s infinite;
+    cursor: pointer;
+}
+
+/* ------------------TradingDual-------------------- */
+
+.container-section{
+    max-width: 1100px;
+    margin: 50px auto;
+    
+}
+
+#TradingDual{
+    display: flex;
+    text-align: center;
+    height: 70vh;
+    align-items: center;
+    font-family: 'Akshar', sans-serif;
+}
+
+.container-img-TradingDual{
+    width: 50%;
+}
+
+.container-img-TradingDual img{
+    width: 325px;
+    margin-bottom: 30px;
+}
+
+.container-TradingDual{
+    width: 50%;
+}
+
+.container-TradingDual h2{
+    font-size: 42px;
+    display: inline-block;
+}
+
+.container-TradingDual span{
+    font-size: 42px;
+    color: rgb(139, 20, 20);
+    font-weight: 700;
+}
+
+.container-TradingDual p{
+    margin: 20px;
+    font-size: 23px;
+}
+
+
+/* -------------especialidades--------------- */
+
+.contenedor-especialidades{
+    background-image: url("img/backgroundMod.png");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+.container-section{
+    /* height: 120vh; */
+}
+
+#especialidades{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.especialidades-titulo{
+    font-size: 30px;
+    margin-top: 80px;
+    color: #fff;
+    font-family: 'Fredoka One';
+    letter-spacing: 3px;
+}
+
+.conteiner-img-especialidades{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 150px 150px ;
+    grid-template-areas: "text" "naranja"; 
+    background-color: #353434;
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 100px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.9);
+    transition: all .5s;
+    font-family: 'Akshar', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.naranja{
+    grid-area: "naranja";
+    background-color: rgb(201, 29, 29);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    clip-path: polygon(0 85%, 150% 0, 100% 100%, 0 100%);
+}
+
+.card:hover .card-img{
+    filter: brightness(1);
+}
+
+.card-text{
+    grid-area: "text";
+    font-size: 20PX;
+    padding: 15px 5px 0 5px;
+}
+
+.cripto{
+    background-image: url(img/criptomonedas.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.indice{
+    background-image: url(img/indices2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.acciones{
+    background-image: url(img/acciones.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.card-text span{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.card-text p{
+    margin-top: 50px;
+    text-align: initial;
+    padding: 0 10px;
+}
+
+/* -------------OPERADORES--------------- */
+
+.titulo-operadores{
+    text-align: center;
+    font-family: 'Fredoka One';
+    font-size: 50px;
+    color: rgb(139, 20, 20)
+}
+
+.card-operadores{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+}
+
+.avatar-img{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.card-nombres{
+    border: rgb(139, 20, 20) 5px solid;
+    border-radius: 10px;
+    height: 255px;
+    padding: 15px;
+    font-family: 'Akshar', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.card-nombres b{
+    font-size: 25px;
+    font-family: 'Fredoka One';
+}
+
+/* -------------FOOTER--------------- */
+
+footer{
+    background-color: #161616;
+    color: #fff;
+    font-size: 16px;
+    height: auto;
+    font-family: 'Akshar', sans-serif;
+    padding-bottom: 15px;
+}
+
+.footer-logo{
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-logo img{
+    width: 100px;
+    height: 50px;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+.footer-texto , .redes{
+    margin: 10px;
+}
+
+.footer-texto{
+    width: 60%;
+    margin-left: 25px;
+    text-align: left;
+    color: #6b6b6b;
+}
+
+.redes{
+    width: 40%;
+    font-size: 20px;
+}
+
+.container-redes{
+    margin-top: 10px;
+}
+
+.container-redes a{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+/*---------------MEDIAQUERYS---------------*/
+
+@media (max-width:1024px){
+
+    .contenedor-especialidades{
+        height: 220vh;
+    }
+
+    .conteiner-img-especialidades{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #especialidades{
+        height: auto;
+    }
+}
+
+@media (max-width:1000px){
+
+    .container-img-TradingDual{
+        display: none;
+    }
+
+    .container-TradingDual{
+        width: 100%;
+    }
+
+    .card-operadores{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:800px){
+
+    .titulo-inicio{
+        font-size: 30px;
+    }
+
+    header{
+        display: none;
+    }
+
+    .header-mov{
+        display: block;
+    }
+
+    .container-footer{
+        flex-direction: column;
+    }
+
+    .footer-texto{
+        width: 80%;
+    }
+
+}
+
+@media(max-width:540px){
+
+    .principal{
+        margin-left: 15px;
+    }
+
+    .titulo-inicio{
+        font-size: 30px;
+    }
+
+    .p-inicio{
+        font-weight: 700;
+        font-size: 14px
+    }
+
+    .especialidades-titulo{
+        font-size: 25px;
+    }
+
+    .footer-texto p{
+        font-size: 16px;
+    }
+
+    .br-1{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.disclaimer{
+    visibility:hidden;
+}
