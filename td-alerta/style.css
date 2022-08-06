@@ -190,9 +190,13 @@ header{
 .tdalerta-titulo{
     font-family: 'Akshar', sans-serif;
     font-size: 30px;
-    font-weight: 900;
     margin-left: 3rem;
     color: #202020;
+    margin-bottom: 5rem;
+}
+
+.tdalerta-titulo h2{
+    font-weight: 800;
 }
 
 
