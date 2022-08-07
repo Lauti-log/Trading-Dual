@@ -252,8 +252,7 @@ main{
     .contenedor{
         flex-direction: column-reverse;
         justify-content: end;
-        margin-bottom: 5rem;
-        margin: 0;
+        margin: 0 0 5rem 0;
         width: 100%;
     }
     
