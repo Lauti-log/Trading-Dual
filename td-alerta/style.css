@@ -251,7 +251,7 @@ main{
 
     .contenedor{
         flex-direction: column-reverse;
-        justify-content: center;
+        justify-content: end;
         margin: 0;
         width: 100%;
     }
