@@ -315,7 +315,7 @@ main{
 
 .precios-card{
     background: rgb(130,21,21);
-    background: linear-gradient(35deg, rgba(130,21,21,1) 0%, rgba(240,52,4,1) 100%);
+    background: linear-gradient(35deg, rgba(130,21,21,1) 0%, rgb(204, 49, 10) 100%);
     color: #fff;
     font-size: 35px;
     padding: 1.5rem;
