@@ -221,13 +221,140 @@ main{
     padding: 5rem 0;
 }
 
+.info-titulo{
+    font-size: 32px;
+}
+
+.info-titulo span{
+    color: #8b1414;
+}
+
+.info-titulo p{
+    font-size: 25px;
+    margin-top: 1rem;
+}
+
+.info-container-cards{
+    display: flex;
+    gap: 5rem;
+    margin-top: 100px;
+    padding: 0 5rem;
+}
+
+.info-card img{
+    margin-bottom: 2rem;
+}
+
+.info-card h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-card p{
+    font-size: 1.1rem;
+}
+
+/* ------------------FUNCIONAMIENTO------------- */
+
+.funcionamiento{
+    padding: 0;
+    color: #fff;
+}
+
+.funcionamiento-container{
+    text-align: left;
+    background-color: rgba(66, 64, 64, 1);
+    margin: -10px 0;
+    padding: 1rem 0 0 5%;
+}
+
+.funcionamiento-titulo{
+    font-size: 35px;
+}
+
+.funcionamiento-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.funcionamiento-texto p{
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+.funcionamiento-texto ul{
+    margin: 1rem 0 0 6rem;
+    font-size: 28px;
+    font-weight: bold;
+    list-style-type: none;
+    list-style-image: url(../img/circle.png);
+}
+
+.funcionamiento-texto ul li{
+    margin-top: 2rem;
+}
+
+.funcionamiento-img img{
+    height: 600px;
+}
 
 
+/* ------------------PRECIOS------------- */
 
 
+.precios-titulo h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
 
+.precios-container-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.precios-card{
+    background: rgb(130,21,21);
+    background: linear-gradient(35deg, rgba(130,21,21,1) 0%, rgba(240,52,4,1) 100%);
+    color: #fff;
+    font-size: 35px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
 
+.precios-card img{
+    height: 100px;
+    margin: 0.8rem;
+}
+
+.precios-card-info p{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.precios-card-precio{
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem 0 2rem 0;
+}
+
+.precios-card-boton{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: #fff 5px solid;
+    padding: .8rem 1rem;
+    border-radius: 50px;
+    transition: all .4s;
+}
+
+.precios-card-boton:hover{
+    transform: scale(1.05);   
+}
 
 
 
