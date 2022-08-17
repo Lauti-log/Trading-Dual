@@ -394,6 +394,10 @@ main{
         font-size: 1.2rem;
     }
 
+    .info-titulo, .funcionamiento-titulo{
+        font-size: 25px;
+    }
+    
     .info-card img{
         margin-bottom: .5rem;
     }
