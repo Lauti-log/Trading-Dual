@@ -400,7 +400,7 @@ main{
 
     .info-container-cards{
         flex-direction: column;
-        gap: 3rem;
+        gap: 5rem;
     }
 
     .funcionamiento-img img{
