@@ -397,6 +397,10 @@ main{
     .info-titulo, .funcionamiento-titulo{
         font-size: 25px;
     }
+
+    .br{
+        display: none;
+    }
     
     .info-card img{
         margin-bottom: .5rem;
@@ -404,7 +408,7 @@ main{
 
     .info-container-cards{
         flex-direction: column;
-        gap: 5rem;
+        gap: 10rem;
     }
 
     .funcionamiento-img img{
@@ -417,6 +421,7 @@ main{
 
     .funcionamiento-texto ul{
         margin: 1rem 0 0 3rem;
+        font-size: 20px;
     }
 
     .precios-container-cards{
