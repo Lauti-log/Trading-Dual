@@ -38,6 +38,7 @@
     justify-content: space-around;
     align-items: center;
     height: 8vh;
+    width: 100vw;
 }
 
 .container-lista-mov{
@@ -357,7 +358,7 @@ main{
 }
 
 
-
+/*---------------MEDIAQUERYS---------------*/
 
 
 
@@ -393,6 +394,23 @@ main{
         font-size: 1.2rem;
     }
 
+    .info-container-cards{
+        flex-direction: column;
+    }
+
+    .funcionamiento-img img{
+        display: none;
+    }
+
+    .funcionamiento-container{
+        height: 75vh;
+    }
+
+    .precios-container-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
 
     .container-footer{
         flex-direction: column;
