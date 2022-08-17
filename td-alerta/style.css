@@ -402,9 +402,7 @@ main{
         display: none;
     }
 
-    .funcionamiento-container{
-        height: 75vh;
-    }
+    
 
     .precios-container-cards{
         flex-direction: column;
