@@ -394,7 +394,7 @@ main{
         font-size: 1.2rem;
     }
 
-    .info-titulo, .funcionamiento-titulo, .precios-titulo h2{
+    .info-titulo, .funcionamiento-titulo{
         font-size: 25px;
     }
 
@@ -424,11 +424,16 @@ main{
         font-size: 20px;
     }
 
+    .precios-titulo h2{
+        font-size: 3rem;
+    }
+
     .precios-container-cards{
         flex-direction: column;
         align-items: center;
         gap: 2.5rem;
     }
+
 
     .container-footer{
         flex-direction: column;
